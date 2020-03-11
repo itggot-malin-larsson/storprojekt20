@@ -1,0 +1,11 @@
+p = users
+
+- users.each do |e|
+    article
+        h1 = e['username']
+
+        form action="like/#{e['id']}" method="post"
+            button type="submit" Like
+
+        form action="dislike/#{e['id']}" method="post"
+            button type="submit" Dislike

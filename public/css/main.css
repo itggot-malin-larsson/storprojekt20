@@ -1,8 +1,16 @@
 body{
-    background-color:green;
+    background-color:rgb(32,61,87);
     margin: 0;
 }
 
 header{
     background-color: black;
+}
+
+nav{
+    background-color: lightsalmon;
+}
+
+nav a{
+    margin: 0 10vw 0 10vw;
 }
