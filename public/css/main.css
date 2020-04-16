@@ -14,3 +14,10 @@ nav{
 nav a{
     margin: 0 10vw 0 10vw;
 }
+
+article{
+    width: 100px;
+    height: 100px;
+    background-color: greenyellow;
+    margin-left: 20px;
+}

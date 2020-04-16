@@ -47,7 +47,7 @@ post('/like/:id') do
     user = session[:id]
     target = params['id']
     
-    log_vote(user, target, 'likes')
+    log_vote(l_user, l_target, 'likes')
     
     redirect('swiper')
 end
@@ -55,7 +55,7 @@ end
 post('/dislike/:id') do
     user = session[:id]
     target = params['id']
-    log_vote(user, target, 'unlikes')
+    log_vote(dl_user, dl_target, 'dislikes')
     
     redirect('swiper')
 end

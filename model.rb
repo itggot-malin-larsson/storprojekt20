@@ -17,7 +17,9 @@ def get_swipes()
     users = db.execute('SELECT * 
         FROM users
         LEFT JOIN likes
-        ON id = target
+        ON id = l_target
+        LEFT JOIN dislikes
+        ON id = dl_target
         WHERE user IS NOT ?', session[:id])
 
     return users
